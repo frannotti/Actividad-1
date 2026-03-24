@@ -1,12 +1,12 @@
 import random
 categorias = {
-   "lenguajes": ["python", "programa", "variable", " entero", "lista"],
-   "estructuras": ["funcion", "bucle", "cadena"]
+   "lenguajes": ["python", "programa", "variable", "entero"],
+   "estructuras": ["funcion", "bucle", "cadena", "lista"]
 }
 
 print("categorias disponibles: ")
 for cat in categorias:
-   print("-", {cat})
+   print("-", cat)
 
 choice = input("Elige una categoria: ")
 word = random.choice(categorias[choice])
